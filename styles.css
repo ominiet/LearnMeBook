@@ -9,11 +9,35 @@ body{
 }
 .ui-state-active{
     border:0px;
-
+}
 #button1 {
     margin-top: 10px;
 }
 #submit {
     margin-top: 10px;
+
+}
+
+.modal-content {
+    background-color: rgb(238, 236, 133);
+}
+
+#head {
+    color: white;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: black;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    position:fixed;
+    z-index:1;
+}
+
+#bod {
+    margin-top: 30px;
+    position:relative;
+    z-index:2;
 
 }

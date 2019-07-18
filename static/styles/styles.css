@@ -11,23 +11,22 @@ body{
     position:fixed;
     z-index:999;
  }
-.cover > img {
+ .cover > img {
     height:400px;
 }
 
-#coverflow {
-    margin-top: 100px;
-    z-index:2
-}
-
 .ui-coverflow-wrapper{
-    height:600px;
-    margin-left: 10%;
+    height:400px;
     z-index:2
 }
 .ui-state-active{
     border:0px;
 }
+
+#coverflow {
+    z-index:2
+}
+
 
 .popup {
     color:black;

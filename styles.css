@@ -2,9 +2,18 @@ body{
     background-color:rgb(0, 211, 211);
 }
 
+
+.ui-coverflow-wrapper{
+    height:400px;
+    margin-top: 100px;
+}
+.ui-state-active{
+    border:0px;
+
 #button1 {
     margin-top: 10px;
 }
 #submit {
     margin-top: 10px;
+
 }

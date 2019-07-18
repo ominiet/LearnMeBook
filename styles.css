@@ -1,0 +1,28 @@
+body{
+    background-color:rgb(0, 70, 150);
+    color: white;
+}
+
+.cover > img {
+    height:400px;
+}
+
+.ui-coverflow-wrapper{
+    height:400px;
+}
+.ui-state-active{
+    border:0px;
+}
+
+.popup {
+    color:black;
+
+
+}
+#button1 {
+    margin-top: 10px;
+}
+#submit {
+    margin-top: 10px;
+
+}

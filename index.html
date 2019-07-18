@@ -58,8 +58,7 @@
           <img src="./static/book-cover9.jpg">
         </div>
       </a>
-      <a target="_blank"
-        href="https://www.bing.com/search?q=adult+fantasy+briohny+doyle&FORM=AWRE">
+      <a target="_blank" href="https://www.bing.com/search?q=adult+fantasy+briohny+doyle&FORM=AWRE">
         <div class="cover">
           <img src="./static/book-cover10.jpg">
         </div>
@@ -133,9 +132,9 @@
 
       <div class="col-sm-4">
 
-        <textarea rows="3" class="form-control" placeholder="enter your text here"></textarea>
+        <textarea rows="3" class="form-control" placeholder="enter your text here" id="bookTitle"></textarea>
       </div>
-      <button class="btn btn-success" id="submit">
+      <button class="btn btn-success" id="submit" onclick="eraseText()">
         <h3>Submit</h3>
       </button>
 
@@ -158,11 +157,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="/scripts/scripts.js"></script>
+  <script src="/scripts/coverflow.js"></script>
 
   <script src="coverflow.js"></script>
   <script>
     $(function () {
-      
+
       $('#coverflow').coverflow({
         active: 1,
         select: function (event, ui) {
@@ -194,6 +195,5 @@
 
   </script>
 </body>
-
 
 </html>

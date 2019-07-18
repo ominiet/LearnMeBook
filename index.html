@@ -35,37 +35,69 @@
     </div>
 
 
-
-    <div class="text-center">
-      <button class="btn btn-danger" id="button1">
-        <h3>Click here if you hate books!</h3>
-      </button>
-
-    </div>
-    <br>
-    <div class="text-center">
-
-
-    </div>
-    <div class="modal" id="myModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header text-center">
-            <h2 class="modal-title">You should read, stupid</h5>
+      </div>
+      <br>
+    <div class="popup">
+      <div class="modal" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h2 class="modal-title">You should read, stupid</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-          </div>
-          <div class="modal-body text-center">
-            <h3>Learn with Jose!</h1>
+            </div>
+            <div class="modal-body text-center">
+              <h3>Learn with Jose!</h1>
               <img width="80%" src="JoseBook.jpg">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
+
+
+      <div class="modal" id="myModal2" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h2 class="modal-title">Thanks</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-center">
+                <h3>Faster. Bolder. Better. </h3>
+                <h5><i>-Daft Punk (2001)</i></h5>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
+
+    <div class="text-center" ><h2>Don't Like This Week's Selections? Suggest a New One Here: </h2>
+      <div class="form-group row">
+        <div class="col-sm-4" >
+        </div> 
+  
+        <div class="col-sm-4" >
+           
+        <textarea  rows="3" class="form-control" placeholder="enter your text here" ></textarea> 
+      </div>
+        <button class="btn btn-success" id="submit"><h3>Submit</h3></button>
+        
+      </div>
+    
+    </div>
+  
+    
+    <br>
+    
 
     <!-- Optional JavaScript -->
 
@@ -107,30 +139,15 @@
         $("#button1").click(function () {
           $("#myModal").modal({ backdrop: true });
         });
-      });
+    });
+    $(document).ready(function(){
+      $("#submit").click(function(){
+        $("#myModal2").modal({backdrop: true});
+        });
+    });
 
     </script>
-</body>
-<div class="text-center">
-  <h2>Don't Like This Week's Selections? Suggest a New One Here: </h2>
-  <div class="form-group row">
-    <div class="col-sm-4">
-    </div>
-
-    <div class="col-sm-4">
-
-      <textarea rows="3" class="form-control" placeholder="enter your text here"></textarea>
-    </div>
-    <button class="btn btn-success" id="submit">
-      <h3>Submit</h3>
-    </button>
-
-  </div>
-
-</div>
-
-</div>
-<br>
-
+  </body>
+ 
 
 </html>

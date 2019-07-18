@@ -3,13 +3,27 @@ body{
     color: white;
 }
 
+#navbar {
+    overflow: hidden;
+    background-color: black;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    position:fixed;
+    z-index:999;
+ }
 .cover > img {
     height:400px;
 }
 
+#coverflow {
+    margin-top: 100px;
+    z-index:2
+}
+
 .ui-coverflow-wrapper{
-    height:400px;
+    height:600px;
     margin-left: 10%;
+    z-index:2
 }
 .ui-state-active{
     border:0px;
@@ -27,3 +41,4 @@ body{
     margin-top: 10px;
 
 }
+

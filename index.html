@@ -7,31 +7,31 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="coverflow.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/coverflow.css">
     <title>BOOKS! for learning</title>
   </head>
   <body class="top-container">
     <div class="text-center">
       <h1>Learn yourself!! With these books</h1>
     </div>
-      
-      
+
+
       <div>
         <div id="coverflow">
           <div class="cover">
-              <img src="./static/book-cover1.jpeg">
+              <img src="/images/books/book-cover1.jpeg">
           </div>
           <div class="cover">
-              <img src="./static/book-cover2.jpeg" >
+              <img src="/images/books/book-cover2.jpeg" >
           </div>
           <div class="cover">
-              <img src="./static/book-cover3.jpeg">
-          </div>  
+              <img src="/images/books/book-cover3.jpeg">
+          </div>
         </div>
       </div>
-    
-      
+
+
 
       <div class="text-center">
         <button class="btn btn-danger" id="button1"><h3>Click here if you hate books!</h3></button>
@@ -53,7 +53,7 @@
           </div>
           <div class="modal-body text-center">
             <h3>Learn with Jose!</h1>
-            <img width="80%" src="JoseBook.jpg">
+            <img width="80%" src="/images/JoseBook.jpg">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -63,13 +63,13 @@
     </div>
 
   <!-- Optional JavaScript -->
-    
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="coverflow.js"></script>
+    <script src="/scripts/coverflow.js"></script>
     <script>
       $(function() {
 
@@ -84,10 +84,10 @@
           if( ! $(this).hasClass('ui-state-active')){
               return;
           }
-          
+
           $('#coverflow').coverflow('next');
-          
-          
+
+
       });
 
       });
@@ -104,20 +104,20 @@
   <div class="text-center" ><h2>Don't Like This Week's Selections? Suggest a New One Here: </h2>
     <div class="form-group row">
       <div class="col-sm-4" >
-      </div> 
+      </div>
 
       <div class="col-sm-4" >
-         
-      <textarea  rows="3" class="form-control" placeholder="enter your text here" ></textarea> 
+
+      <textarea  rows="3" class="form-control" placeholder="enter your text here" ></textarea>
     </div>
       <button class="btn btn-success" id="submit"><h3>Submit</h3></button>
-      
+
     </div>
-  
+
   </div>
 
-  
+
   <br>
-  
+
 
 </html>

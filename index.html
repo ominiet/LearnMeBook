@@ -162,22 +162,20 @@
   <script src="coverflow.js"></script>
   <script>
     $(function () {
-
+      
       $('#coverflow').coverflow({
-        active: 2,
+        active: 1,
         select: function (event, ui) {
-          console.log('here');
+          console.log("active")
         }
       });
 
-      $('#coverflow img').click(function () {
+      $('#coverflow img').click(function (e) {
+
         if (!$(this).hasClass('ui-state-active')) {
           return;
         }
-
         $('#coverflow').coverflow('next');
-
-
       });
 
     });

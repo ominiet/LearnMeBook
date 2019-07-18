@@ -9,7 +9,6 @@ body{
 
 .ui-coverflow-wrapper{
     height:400px;
-    margin-left: 10%;
 }
 .ui-state-active{
     border:0px;
